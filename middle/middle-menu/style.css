@@ -1,0 +1,33 @@
+.leftcol{
+	float:left;
+	width:239px;
+}
+
+.leftmenu {
+	border-left: solid 1px #AAA8A8;
+	border-right: solid 1px #AAA8A8;
+}
+
+.leftmenu a.menuitem{
+	cursor: pointer;
+	height:25px;
+	display:block;
+	line-height:25px;
+	text-decoration:none;
+	text-align: left;
+	font-weight: bold;
+	padding: 0px 0px 0px 10px;
+	color:#646464;
+	border-bottom: 1px solid #bbbbbb;
+	background-image: linear-gradient(to top, #E4E4E4 0%, #FFF 21px);
+	background-image: -webkit-linear-gradient(bottom, #E4E4E4 0%, #FFF 21px);
+	background-image: -o-linear-gradient(bottom, #E4E4E4 0%, #FFF 21px);
+	background-image: -ms-linear-gradient(bottom, #E4E4E4 0%, #FFF 21px);
+	background-image: -moz-linear-gradient(bottom, #E4E4E4 0%, #FFF 21px);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E4E4E4');
+	zoom: 1;
+}
+
+.leftmenu a.menuitem:hover{
+	color: #ec5300;
+}

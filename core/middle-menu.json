@@ -1,0 +1,26 @@
+{ 
+	"id" 				: "#content",
+	"category" 	: "stati",
+	"type" 			: "square",
+	"position"	: "main",
+	"isAnim"		: false,
+	"show"			: true,
+	"list" : [
+		{	"name" : "Свадьба",										"url"	: "svadba.html",							"img"	:  "images/main_menu/svadba.jpg"},
+		{	"name" : "Детский День Рождения",			"url"	: "detskii_birthday.html",		"img"	:  "images/main_menu/detskii-dr.jpg"},
+		{	"name" : "Оригинальные поздравления",	"url"	: "orig_podarki.html",				"img"	:  "images/main_menu/orig-podarki.jpg"},
+		{	"name" : "Новый Год",									"url"	: "new_year.html",						"img"	:  "images/main_menu/novij-god-2.jpg"},
+		{	"name" : "Юбилей",											"url"	: "ubiley.html",							"img"	:  "images/main_menu/ubiley.jpg"},
+		{	"name" : "Встреча из роддома",					"url"	: "vstrecha_iz_roddoma.html",	"img"	:  "images/main_menu/vstrecha-iz-roddoma.jpg"},
+		{	"name" : "Корпоратив",									"url"	: "korporativ.html",					"img"	:  "images/main_menu/korporativ.jpg"},
+		{	"name" : "Открытие ТРЦ, Промо акции",	"url"	: "otkritie_trc.html",				"img"	:  "images/main_menu/otkritie-tc.jpg"},
+		{	"name" : "Хеллоуин",										"url"	: "halloween.html",						"img"	:  "images/main_menu/helloween.jpg"},
+		{	"name" : "Свидание, признание",				"url"	: "svidanie.html",						"img"	:  "images/main_menu/svidanie.jpg"},
+		{	"name" : "Выпускной",									"url"	: "vipusknoi.html",						"img"	:  "images/main_menu/vipusknoi.jpg"},
+		{	"name" : "Предвыборные, PR акции",			"url"	: "predvibornaja.html",				"img"	:  "images/main_menu/predvibornaja.jpg"},
+		{	"name" : "Пикник",											"url"	: "picknic.html",							"img"	:  "images/main_menu/piknik3.jpg"},
+		{	"name" : "Новоселье",									"url"	: "novoselie.html",						"img"	:  "images/main_menu/novoselie.jpg"},
+		{	"name" : "1 сентября",									"url"	: "1_september.html",					"img"	:  "images/main_menu/1_sent_2.jpg"},
+		{	"name" : "Пасха",											"url"	: "pasha.html",								"img"	:  "images/main_menu/pasha.jpg"}
+	]
+}
