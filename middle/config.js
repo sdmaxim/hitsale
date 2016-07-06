@@ -7,21 +7,11 @@ angular.
       $locationProvider.hashPrefix('!');
       $routeProvider.
         when('/', {
-          template: '<middle-menu></middle-menu>'
+          template: '<nav-menu menu-type="middle-menu"></nav-menu>'
         }).
-        when('/:pageId', {
+        when('/:pageType/:pageId', {
           template: '<content></content>'
         }).
         otherwise('/');
     }
   ]);
-
-/*  
-<div class="page-body" align="center">
-  <div class="main">
-    <top></top>
-    <middle></middle>
-    <footer></footer>
-  </div>
-</div>
-*/

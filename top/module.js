@@ -1,5 +1,3 @@
 'use strict';
 
-angular.module('top', [
-	'topMenu'
-]);
+angular.module('top', []);

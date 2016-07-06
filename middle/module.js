@@ -2,6 +2,6 @@
 
 angular.module('middle', [
 	'ngRoute',
-	'middleMenu',
+	'navMenu',
 	'content'
 ]);

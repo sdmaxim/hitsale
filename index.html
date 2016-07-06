@@ -12,16 +12,16 @@
 
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<link rel="stylesheet" href="top/style.css" type="text/css" />
-	<link rel="stylesheet" href="top-menu/style.css" type="text/css" />
-	<link rel="stylesheet" href="left-menu/style.css" type="text/css" />
+	<link rel="stylesheet" href="nav-menu/top-menu.css" type="text/css" />
+	<link rel="stylesheet" href="nav-menu/left-menu.css" type="text/css" />
+	<link rel="stylesheet" href="nav-menu/middle-menu.css" type="text/css" />
 	<link rel="stylesheet" href="middle/style.css" type="text/css" />
 	<link rel="stylesheet" href="middle/content/style.css" type="text/css" />
-	<link rel="stylesheet" href="footer/style.css" type="text/css" />
-	<!-- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
 	
-  <!-- <script src="angular/jquery.min.js"></script> -->
+  <script src="angular/jquery.min.js"></script>
   <script src="angular/angular.min.js"></script>
-  <!-- <script src="angular/angular-animate.min.js"></script> -->
+  <script src="angular/angular-animate.min.js"></script>
   <script src="angular/angular-resource.min.js"></script>
   <script src="angular/angular-route.min.js"></script>
 
@@ -30,25 +30,14 @@
 	<script type="text/javascript" src="top/module.js"></script>
 	<script type="text/javascript" src="top/component.js"></script>
 
-	<script type="text/javascript" src="top-menu/module.js"></script>
-	<script type="text/javascript" src="top-menu/component.js"></script>
-
-	<script type="text/javascript" src="left-menu/module.js"></script>
-	<script type="text/javascript" src="left-menu/component.js"></script>
+	<script type="text/javascript" src="nav-menu/module.js"></script>
+	<script type="text/javascript" src="nav-menu/component.js"></script>
+	<script type="text/javascript" src="nav-menu/service.js"></script>
 
 	<script type="text/javascript" src="middle/module.js"></script>
 	<script type="text/javascript" src="middle/config.js"></script>
 	<script type="text/javascript" src="middle/content/module.js"></script>
 	<script type="text/javascript" src="middle/content/component.js"></script>
-	<script type="text/javascript" src="middle/middle-menu/module.js"></script>
-	<script type="text/javascript" src="middle/middle-menu/component.js"></script>	
-
-	<script type="text/javascript" src="footer/module.js"></script>
-	<script type="text/javascript" src="footer/component.js"></script>
-
-	<script type="text/javascript" src="core/module.js"></script>
-	<script type="text/javascript" src="core/db/module.js"></script>
-	<script type="text/javascript" src="core/db/service.js"></script>
 
 </head>
 
@@ -56,10 +45,9 @@
 	<div class="page-body" align="center">
 		<div class="main">
 			<top></top>
-			<top-menu></top-menu>
-			<left-menu class="leftcol"></left-menu>
+			<nav-menu menu-type="top-menu"></nav-menu>
+			<nav-menu menu-type="left-menu" class="leftcol"></nav-menu>
 			<div ng-view class="content"></div>
-			<footer></footer>
 		</div>
 	</div>
 </body>
