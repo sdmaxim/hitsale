@@ -2,7 +2,7 @@
 
 // Define the `phonecatApp` module
 angular.module('gulliverApp', [
-  'top',
+	'core',
   'navMenu',
   'middle'
 ]);
