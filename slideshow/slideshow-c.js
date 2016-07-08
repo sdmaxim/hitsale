@@ -6,9 +6,10 @@ angular.
     templateUrl: 'slideshow/slideshow.html',
     controller: ['$routeParams', 'GetData', function ($routeParams, GetData) {
         var self = this;
-        console.log($routeParams);
-        self.db = GetData.get({filename: $routeParams.filename}, function(images) {
-        	var fullpath = images.path + images.filename + images.data[0].fileId + '-small.jpg';
+        self.db = GetData.get({filename: $routeParams.pageId}, function(images) {
+        	var fullpath = images.data[0].fileId;
+        	self.files = images.data;
+        	self.path = images.path + images.filename;
           self.setImage(fullpath);
         });
 

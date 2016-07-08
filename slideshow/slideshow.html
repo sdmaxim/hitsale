@@ -1,7 +1,12 @@
 <div class="slide-show">
-	<ul>
-		<li ng-repeat="(key, file) in $ctrl.files">
-			<img src="{{file.path}}/{{file.fileId}}.jpg">
+	<img 	ng-src="{{$ctrl.path}}{{img.fileId}}-big.jpg" 
+				class="bigimg"
+				ng-class="{selected: img.fileId === $ctrl.mainImageUrl}"
+				ng-repeat="img in $ctrl.files" />
+	<ul class="img-thumbs">
+		<li ng-repeat="file in $ctrl.files">
+			<img 	ng-src="{{$ctrl.path}}{{file.fileId}}-small.jpg" 
+						ng-click="$ctrl.setImage(file.fileId)"/>
 		</li>
 	</ul>
 </div>

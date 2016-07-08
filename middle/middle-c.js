@@ -9,7 +9,7 @@ angular.
         when('/', {
           template: '<nav-menu menu-type="middle-menu"></nav-menu>'
         }).
-        when('/:pageType/:pageId', {
+        when('/:pageType/:pageId.html', {
           template: '<content></content>'
         }).
         otherwise('/');

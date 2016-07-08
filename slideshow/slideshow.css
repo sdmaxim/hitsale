@@ -1,0 +1,14 @@
+.img-thumbs li {
+    cursor: pointer;
+}
+
+.bigimg {
+	 background-color: white;
+  display: none;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 2em;
+  width: 400px;
+}
