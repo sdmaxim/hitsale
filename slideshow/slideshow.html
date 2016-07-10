@@ -1,12 +1,16 @@
-<div class="slide-show">
+<div class="slideshow">
+	<a class="prevbtnimg" ng-click="$ctrl.prevImage()"><</a>
+	<div class="carousel">
+		<ul class="slideshow">
+			<li ng-repeat="file in $ctrl.files | limitTo:6:1">
+				<img 	ng-src="{{$ctrl.path}}{{file.fileId}}-small.jpg" 
+							ng-click="$ctrl.setImage(file.fileId)"/>
+			</li>
+		</ul>
+	</div>
+	<a class="nextbtnimg" ng-click="$ctrl.nextImage()">></a>
 	<img 	ng-src="{{$ctrl.path}}{{img.fileId}}-big.jpg" 
 				class="bigimg"
 				ng-class="{selected: img.fileId === $ctrl.mainImageUrl}"
 				ng-repeat="img in $ctrl.files" />
-	<ul class="img-thumbs">
-		<li ng-repeat="file in $ctrl.files">
-			<img 	ng-src="{{$ctrl.path}}{{file.fileId}}-small.jpg" 
-						ng-click="$ctrl.setImage(file.fileId)"/>
-		</li>
-	</ul>
 </div>

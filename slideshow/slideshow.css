@@ -3,12 +3,64 @@
 }
 
 .bigimg {
-	 background-color: white;
+	background-color: white;
   display: none;
   float: left;
-  height: 400px;
-  margin-bottom: 2em;
-  margin-right: 3em;
-  padding: 2em;
-  width: 400px;
+  margin-bottom: 1em;
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  float: left;
+  position: relative;
+	overflow: hidden;
+}
+
+.selected{
+	display: block;
+}
+
+.carousel {
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+		overflow: hidden;
+    width: 640px;
+    height: 150px;
+    margin-bottom: 5px;
+    background: #FFF;
+}
+
+.slideshow {
+	width: 800px;
+}
+
+a.prevbtnimg, a.nextbtnimg {
+    display: block;
+    width: 26px;
+    height: 30px;
+    line-height: 1;
+    color: #d1d1d1;
+    background-color: #333333;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 8px;
+    float: left;
+    margin-top: 60px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+a.prevbtnimg {
+    margin-right: -5px;
+    text-indent: 4px;
+    float: left;
+}
+
+a.nextbtnimg {
+    margin-left: -5px;
+    text-indent: 8px;
+    float: left;
 }
