@@ -3,15 +3,16 @@
 }
 
 .bigimg {
-	background-color: white;
-  display: none;
-  float: left;
-  margin-bottom: 1em;
-  border: 1px solid #bababa;
-  border-radius: 10px;
-  float: left;
-  position: relative;
-	overflow: hidden;
+    background-color: white;
+    display: none;
+    float: left;
+    margin-bottom: 1em;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .selected{
@@ -23,7 +24,7 @@
     border-radius: 10px;
     float: left;
     position: relative;
-		overflow: hidden;
+	overflow: hidden;
     width: 640px;
     height: 150px;
     margin-bottom: 5px;
@@ -31,7 +32,7 @@
 }
 
 .slideshow {
-	width: 800px;
+	width: 850px;
 }
 
 a.prevbtnimg, a.nextbtnimg {
@@ -63,4 +64,59 @@ a.nextbtnimg {
     margin-left: -5px;
     text-indent: 8px;
     float: left;
+}
+
+button {
+  cursor: pointer;
+}
+
+#popUpMsg-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.64);
+}
+
+#popUpMsg {
+    margin: calc(50% - (40%/2));
+    margin-top: 130px;
+    margin-left: calc(50% - (40%/2) + 25px);
+    width: auto;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+#popUpMsg .close {
+  background: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: -6px;
+  right: -7px;
+}
+
+#popUpMsg .content {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#popUpMsg button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: 0;
+  background: lightgray;
+  padding: 5px 20px;
+  cursor: pointer;
+
 }
