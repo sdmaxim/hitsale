@@ -1,25 +1,22 @@
 <div class="slideshow">
-	<a class="prevbtnimg" ng-click="$ctrl.prevImage()"><</a>
+	<a class="prevbtnimg" ng-click="$ctrl.ind.prevImage()"><</a>
 	<div class="carousel">
 		<ul class="slideshow">
-			<li ng-repeat="img in $ctrl.thumbs">
-				<img 	ng-src="{{$ctrl.path}}{{img.fileId}}-small.jpg" 
-							ng-click="$ctrl.openPopUp(img.fileId)"/>
+			<li ng-repeat="(key, img) in $ctrl.thumbs">
+				<img 	ng-src="{{$ctrl.getFullPathSmall(key)}}" 
+							ng-click="$ctrl.openPopUp(key)"/>
 			</li>
 		</ul>
 	</div>
-	<a class="nextbtnimg" ng-click="$ctrl.nextImage()">></a>
+	<a class="nextbtnimg" ng-click="$ctrl.ind.nextImage()">></a>
 
-	<div id="popUpMsg-bg" ng-show="$ctrl.showPopUpMsg">
+	<!--<div id="popUpMsg-bg" ng-show="$ctrl.showPopUpMsg">
 		<div id="popUpMsg">
 			<div class="close" ng-click="$ctrl.closePopUp()">x</div>
-			<div class="bigimg">{{popUpMsgContent}}</div>
-			<img 	ng-src="{{$ctrl.path}}{{img.fileId}}-big.jpg" 
-						class="bigimg"
-						ng-class="{selected: img.fileId === $ctrl.mainImageUrl}"
-						ng-repeat="img in $ctrl.files" 
+			<img 	class="bigimg"
+						ng-src="{{$ctrl.getFullPathBig($ctrl.ind.bigInd)}}" 
 						ng-click="$ctrl.nextBigImage()"/>
 		</div>
-	</div>
+	</div>-->
 
 </div>
