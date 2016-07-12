@@ -72,14 +72,10 @@ angular.
 
         self.setIndPath = function (path, filename) {
           self.ind.length = self.data.length;
-          self.ind.end = self.data.length;
-          if (self.ind.end > self.ind.thumbLength) self.ind.end = self.ind.thumbLength;
+          self.ind.end = self.data.length-1;
+          if (self.ind.end > self.ind.thumbLength-1) self.ind.end = self.ind.thumbLength-1;
           self.fullPath = path + filename;
         }
-
-        self.setImage = function setImage(fileId) {
-          self.ind.bigInd = 1*fileId;
-        };
 
         self.db = GetData.get({filename: $routeParams.pageId}, function(images) {
           self.data = images.data;
@@ -94,7 +90,7 @@ angular.
         self.showPopUpMsg = false;
 
         self.openPopUp = function( fileId ) {
-          self.setImage(fileId);
+          self.ind.bigInd = fileId;
           self.showPopUpMsg = true;
         }
 
