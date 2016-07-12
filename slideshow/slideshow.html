@@ -1,22 +1,24 @@
 <div class="slideshow">
-	<a class="prevbtnimg" ng-click="$ctrl.ind.prevImage()"><</a>
+	<a class="prevbtnimg" ng-click="$ctrl.prevImage()"><</a>
 	<div class="carousel">
-		<ul class="slideshow">
+		<ul class="thumbs-imgs">
 			<li ng-repeat="(key, img) in $ctrl.thumbs">
-				<img 	ng-src="{{$ctrl.getFullPathSmall(key)}}" 
+				<img 	ng-src="{{$ctrl.getFullImgPath(key, 'small')}}"
 							ng-click="$ctrl.openPopUp(key)"/>
 			</li>
 		</ul>
 	</div>
-	<a class="nextbtnimg" ng-click="$ctrl.ind.nextImage()">></a>
+	<a class="nextbtnimg" ng-click="$ctrl.nextImage()">></a>
 
-	<!--<div id="popUpMsg-bg" ng-show="$ctrl.showPopUpMsg">
+	<div id="popUpMsg-bg" ng-show="$ctrl.showPopUpMsg">
 		<div id="popUpMsg">
 			<div class="close" ng-click="$ctrl.closePopUp()">x</div>
 			<img 	class="bigimg"
-						ng-src="{{$ctrl.getFullPathBig($ctrl.ind.bigInd)}}" 
-						ng-click="$ctrl.nextBigImage()"/>
+						ng-src="{{$ctrl.getFullImgPath($ctrl.bigInd, 'big')}}" 
+						ng-click="$ctrl.nextImage()"/>
+			{{$ctrl.bigInd}} 
+			{{$ctrl.getFullImgPath($ctrl.bigInd, 'big')}}
 		</div>
-	</div>-->
+	</div>
 
 </div>

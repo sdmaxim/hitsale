@@ -14,6 +14,11 @@
     cursor: pointer;
 }
 
+.thumbs-imgs {
+	margin-left: -350px;
+	width: 1250px;
+}
+
 .selected{
 	display: block;
 }
@@ -31,7 +36,8 @@
 }
 
 .slideshow {
-	width: 850px;
+	width: auto;
+	height: 170px;
 }
 
 a.prevbtnimg, a.nextbtnimg {
@@ -80,7 +86,7 @@ button {
 
 #popUpMsg {
     margin: calc(50% - (40%/2));
-    margin-top: 130px;
+    margin-top: 330px;
     margin-left: calc(50% - (40%/2) + 25px);
     width: auto;
     background: white;
