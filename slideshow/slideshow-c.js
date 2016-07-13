@@ -25,36 +25,36 @@ angular.
         });
 
         self.nextImage = function () {
-            start++;
-            end++;
+          start++;
+          end++;
 
-            validInd();
-            self.thumbs.shift();
-            self.thumbs.push(self.data[end]);
+          validInd();
+          self.thumbs.shift();
+          self.thumbs.push(self.data[end]);
         };
 
         self.prevImage = function () {
-            start--;
-            end--;
+          start--;
+          end--;
 
-            validInd();
-            self.thumbs.pop();
-            self.thumbs.unshift(self.data[start]);
+          validInd();
+          self.thumbs.pop();
+          self.thumbs.unshift(self.data[start]);
         };
 
         var validInd = function () {
-            if (start > length-1) {
-              start = 0;
-            }
-            if (end > length-1) {
-              end = 0;
-            }
-            if (start < 0) {
-              start = length-1;
-            }
-            if (end < 0) {
-              end = length-1;
-            }
+          if (start > length-1) {
+            start = 0;
+          }
+          if (end > length-1) {
+            end = 0;
+          }
+          if (start < 0) {
+            start = length-1;
+          }
+          if (end < 0) {
+            end = length-1;
+          }
         }
 
         var getFileId = function (fileId) {
@@ -76,16 +76,15 @@ angular.
         }
 
         self.closePopUp = function(){
-          self.showPopUpMsg = false;
+          self.showPopUpImg = false;
         }
 
-        self.showPopUpMsg = false;
+        self.showPopUpImg = false;
 
         self.openPopUp = function( fileId ) {
           self.bigInd = fileId;
-          self.showPopUpMsg = true;
+          self.showPopUpImg = true;
         }
-
       }
     ]
   });

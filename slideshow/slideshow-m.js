@@ -1,3 +1,6 @@
 'use strict';
 
-angular.module('slideShow', ['core.getdata']);
+angular.module('slideShow', [
+	'core.getdata',
+	'ngAnimate'
+]);

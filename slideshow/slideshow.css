@@ -1,17 +1,17 @@
 .img-thumbs li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .bigimg {
-    background-color: white;
-    float: left;
-    margin-bottom: 1em;
-    border: 1px solid #bababa;
-    border-radius: 10px;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+  background-color: white;
+  float: left;
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 6px;
 }
 
 .thumbs-imgs {
@@ -24,58 +24,81 @@
 }
 
 .carousel {
-    border: 1px solid #bababa;
-    border-radius: 10px;
-    float: left;
-    position: relative;
-	overflow: hidden;
-    width: 640px;
-    height: 150px;
-    margin-bottom: 5px;
-    background: #FFF;
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 640px;
+  height: 150px;
+  margin-bottom: 5px;
+  background: #FFF;
 }
 
 .slideshow {
 	width: auto;
 	height: 170px;
-}
-
-a.prevbtnimg, a.nextbtnimg {
-    display: block;
-    width: 26px;
-    height: 30px;
-    line-height: 1;
-    color: #d1d1d1;
-    background-color: #333333;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 8px;
-    float: left;
-    margin-top: 60px;
-    padding-top: 4px;
-    cursor: pointer;
-}
-
-a.prevbtnimg {
-    margin-right: -5px;
-    text-indent: 4px;
-    float: left;
-}
-
-a.nextbtnimg {
-    margin-left: -5px;
-    text-indent: 8px;
-    float: left;
-}
-
-button {
   cursor: pointer;
 }
 
-#popUpMsg-bg {
+.prevbtnimg, .nextbtnimg {
+  display: block;
+  width: 26px;
+  height: 60px;
+  line-height: 1;
+  color: #d1d1d1;
+  background-color: #333333;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 8px;
+  float: left;
+  margin-top: 45px;
+  padding-top: 4px;
+}
+
+.prevbtnimg {
+  margin-right: -5px;
+  text-indent: 4px;
+  float: left;
+}
+
+.nextbtnimg {
+  margin-left: -5px;
+  text-indent: 8px;
+  float: left;
+}
+.btn-inside {
+  width: 4px;
+  height: 45px;
+  background: #919191;
+  float: left;
+  margin-top: 5px;
+}
+.btn-inside.left {
+  margin-left: 7px;
+}
+
+.btn-inside.right {
+  margin-left: 15px;
+}
+
+.popUpImg {
+  margin: calc(50% - 350px);
+  margin-top: 80px;
+  width: auto;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.popUpImg-bg {
   position: absolute;
   left: 0;
   right: 0;
@@ -84,21 +107,23 @@ button {
   background: rgba(0,0,0,0.64);
 }
 
-#popUpMsg {
-    margin: calc(50% - (40%/2));
-    margin-top: 330px;
-    margin-left: calc(50% - (40%/2) + 25px);
-    width: auto;
-    background: white;
-    border-radius: 5px;
-    position: absolute;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-right: 15px;
+.popUpImg-bg.ng-enter,
+.popUpImg-bg.ng-leave {
+  transition:0.2s linear all;
 }
 
-#popUpMsg .close {
-  background: black;
+.popUpImg-bg.ng-enter, 
+.popUpImg-bg.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.popUpImg-bg.ng-leave, 
+.popUpImg-bg.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.popUpImg .close {
+  background: rgba(152, 169, 0, 0.83);
   color: white;
   width: 20px;
   height: 20px;
@@ -106,22 +131,25 @@ button {
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
-  top: -6px;
-  right: -7px;
+  top: -11px;
+  right: -11px;
 }
 
-#popUpMsg .content {
-  text-align: center;
-  margin-bottom: 10px;
+.popUpImg .close:hover {
+  background: rgba(152, 0, 0, 0.83);
 }
 
-#popUpMsg button {
-  display: block;
-  margin: 0 auto;
-  border-radius: 3px;
-  border: 0;
-  background: lightgray;
-  padding: 5px 20px;
-  cursor: pointer;
+.prevbtnimg:hover, .nextbtnimg:hover {
+  background-color: #919191;
+}
 
+.prevbtnimg:hover .btn-inside, .nextbtnimg:hover .btn-inside {
+  background: #ffffff;
+}
+
+.popUpMsg {
+    display: block;
+    text-align: center;
+    background: #BBBBBB
+    position: absolute;
 }
