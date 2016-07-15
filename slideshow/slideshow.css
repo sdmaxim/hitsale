@@ -14,8 +14,8 @@
 }
 
 .thumbs-imgs {
-	margin-left: -350px;
 	width: 1250px;
+  height: 170px;
 }
 
 .selected{
@@ -41,7 +41,6 @@
 }
 
 .prevbtnimg, .nextbtnimg {
-  display: block;
   width: 26px;
   height: 60px;
   line-height: 1;
@@ -61,14 +60,13 @@
 .prevbtnimg {
   margin-right: -5px;
   text-indent: 4px;
-  float: left;
 }
 
 .nextbtnimg {
   margin-left: -5px;
   text-indent: 8px;
-  float: left;
 }
+
 .btn-inside {
   width: 4px;
   height: 45px;
@@ -83,6 +81,35 @@
 .btn-inside.right {
   margin-left: 15px;
 }
+
+.prevbtnimg:hover, .nextbtnimg:hover {
+  background-color: #919191;
+}
+
+.prevbtnimg:hover .btn-inside, .nextbtnimg:hover .btn-inside {
+  background: #ffffff;
+}
+
+.prevbtnimg.big, .nextbtnimg.big {
+  position: absolute;
+  color: #d1d1d1;
+  background: rgba(152, 169, 0, 0.83);
+}
+
+.nextbtnimg.big {
+  margin-left: 5px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.prevbtnimg.big {
+  left: -26px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.prevbtnimg.big:hover, .nextbtnimg.big:hover{
+  background: rgba(152, 0, 0, 0.83);
+}
+
 
 .popUpImg {
   margin: calc(50% - 350px);
@@ -138,18 +165,9 @@
   background: rgba(152, 0, 0, 0.83);
 }
 
-.prevbtnimg:hover, .nextbtnimg:hover {
-  background-color: #919191;
-}
-
-.prevbtnimg:hover .btn-inside, .nextbtnimg:hover .btn-inside {
-  background: #ffffff;
-}
-
 .popUpMsg {
     display: block;
     text-align: center;
     background: #BBBBBB
-    position: absolute;
     margin-bottom: 4px;
 }
