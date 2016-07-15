@@ -15,6 +15,7 @@ angular.
         var bigInd = 0;
         var imagesStringLength = 0;
         var imgCount = 0;
+        var caruselWidth = 640;
 
         GetData.get({filename: $routeParams.pageId}, function(images) {
           self.data = images.data;
@@ -29,7 +30,7 @@ angular.
               imgCount++;
               self.data[i].width = this.width;
               self.data[i].height = this.height;
-              if (imagesStringLength < 640) {
+              if (imagesStringLength < caruselWidth) {
                 imagesStringLength += this.width;
                 thumbLength += 1;
               }
@@ -48,21 +49,29 @@ angular.
         });
 
         self.nextImage = function () {
-          var tempSize = self.data[start].width;
+          imagesStringLength -= self.data[start].width;
           var i = end;
-          /*while ((tempSize > 0) && (i)) {
-              tempSize -= 
-          }*/
-          start++;
-          end++;
+          while ((imagesStringLength < caruselWidth) && (i < self.length-1)) {
+              i++;
+              imagesStringLength += self.data[i].width;
+          }
+          if (imagesStringLength >= caruselWidth) start++;
+          console.log(start + " " + end + " " + imagesStringLength);
+          end = i;
           bigInd++;
           validInd();
         };
 
         self.prevImage = function () {
-          var tempSize = self.data[end].width;
-          start--;
-          end--;
+          imagesStringLength -= self.data[end].width;
+          var i = start;
+          while ((imagesStringLength < caruselWidth) && (i > 0)) {
+              i--;
+              imagesStringLength += self.data[i].width;
+          }
+          if (imagesStringLength >= caruselWidth) end--;
+          start = i;
+          console.log(start + " " + end + " " + imagesStringLength);
           bigInd--;
           validInd();
         };
