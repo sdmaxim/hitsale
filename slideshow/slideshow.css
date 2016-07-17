@@ -16,6 +16,8 @@
 .thumbs-imgs {
 	width: 1250px;
   height: 170px;
+  position: relative;
+  z-index: 1;
 }
 
 .selected{
@@ -51,7 +53,6 @@
   font-size: 25px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
-  border-radius: 8px;
   float: left;
   margin-top: 45px;
   padding-top: 4px;
@@ -60,17 +61,19 @@
 .prevbtnimg {
   margin-right: -5px;
   text-indent: 4px;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .nextbtnimg {
   margin-left: -5px;
   text-indent: 8px;
+  border-radius: 0px 15px 15px 0px;
 }
 
 .btn-inside {
   width: 4px;
   height: 45px;
-  background: #919191;
+  background: #4b604b;
   float: left;
   margin-top: 5px;
 }
@@ -98,16 +101,14 @@
 
 .nextbtnimg.big {
   margin-left: 5px;
-  border-radius: 0px 15px 15px 0px;
 }
 
 .prevbtnimg.big {
   left: -26px;
-  border-radius: 15px 0px 0px 15px;
 }
 
 .prevbtnimg.big:hover, .nextbtnimg.big:hover{
-  background: rgba(152, 0, 0, 0.83);
+  background: #baff00;
 }
 
 

@@ -55,8 +55,11 @@ angular.
               i++;
               imagesStringLength += self.data[i].width;
           }
-          if (imagesStringLength >= caruselWidth) start++;
-          console.log(start + " " + end + " " + imagesStringLength);
+          if (imagesStringLength >= caruselWidth) 
+            start++;
+          else 
+            imagesStringLength += self.data[start].width;
+          console.log(start + " " + end + " " + imagesStringLength + " " + self.length);
           end = i;
           bigInd++;
           validInd();
@@ -69,7 +72,10 @@ angular.
               i--;
               imagesStringLength += self.data[i].width;
           }
-          if (imagesStringLength >= caruselWidth) end--;
+          if (imagesStringLength >= caruselWidth) 
+            end--;
+          else 
+            imagesStringLength += self.data[start].width;
           start = i;
           console.log(start + " " + end + " " + imagesStringLength);
           bigInd--;

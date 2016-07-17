@@ -9,7 +9,8 @@
 			<li ng-repeat="(key, img) in $ctrl.data">
 				<img 	ng-src="{{$ctrl.getSmallImg(key)}}"
 							ng-click="$ctrl.openPopUp(key)"
-							ng-if="$ctrl.getShowFlag(key)"/>
+							/>
+							<!-- ng-if="$ctrl.getShowFlag(key)" -->
 			</li>
 		</ul>
 	</div>
