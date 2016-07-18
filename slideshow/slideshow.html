@@ -5,7 +5,7 @@
 		<div class="btn-inside left"></div>
 	</a>
 	<div class="carousel">
-		<ul class="thumbs-imgs">
+		<ul class="thumbs-imgs" style="left:{{$ctrl.shift}}px">
 			<li ng-repeat="(key, img) in $ctrl.data">
 				<img 	ng-src="{{$ctrl.getSmallImg(key)}}"
 							ng-click="$ctrl.openPopUp(key)"

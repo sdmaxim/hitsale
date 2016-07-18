@@ -8,6 +8,7 @@ angular.
         var self = this;
         self.data = [];
         var fullPath = "";
+        var fullWidth = 0;
         var thumbLength = 0;
         self.length = 0;
         var start = 0;
@@ -16,6 +17,7 @@ angular.
         var imagesStringLength = 0;
         var imgCount = 0;
         var caruselWidth = 640;
+        self.shift = 0;
 
         GetData.get({filename: $routeParams.pageId}, function(images) {
           self.data = images.data;
@@ -30,6 +32,7 @@ angular.
               imgCount++;
               self.data[i].width = this.width;
               self.data[i].height = this.height;
+              fullWidth += this.width;
               if (imagesStringLength < caruselWidth) {
                 imagesStringLength += this.width;
                 thumbLength += 1;
@@ -49,7 +52,7 @@ angular.
         });
 
         self.nextImage = function () {
-          imagesStringLength -= self.data[start].width;
+          /*imagesStringLength -= self.data[start].width;
           var i = end;
           while ((imagesStringLength < caruselWidth) && (i < self.length-1)) {
               i++;
@@ -60,13 +63,20 @@ angular.
           else 
             imagesStringLength += self.data[start].width;
           console.log(start + " " + end + " " + imagesStringLength + " " + self.length);
-          end = i;
+          end = i;*/
           bigInd++;
+          start++;
           validInd();
+          if (self.shift - self.data[start].width < 0)
+            self.shift = 0;
+          else 
+            self.shift -= self.data[start].width;
+
+          console.log(start + " " + end + " " + self.shift);
         };
 
         self.prevImage = function () {
-          imagesStringLength -= self.data[end].width;
+          /*imagesStringLength -= self.data[end].width;
           var i = start;
           while ((imagesStringLength < caruselWidth) && (i > 0)) {
               i--;
@@ -77,9 +87,14 @@ angular.
           else 
             imagesStringLength += self.data[start].width;
           start = i;
-          console.log(start + " " + end + " " + imagesStringLength);
+          console.log(start + " " + end + " " + imagesStringLength);*/
           bigInd--;
+          start--;
           validInd();
+          self.shift += self.data[start].width;
+          /*if (self.shift > fullWidth-caruselWidth) 
+              self.shift = fullWidth-caruselWidth;*/
+          console.log(start + " " + end + " " + self.shift);
         };
 
         self.getShowFlag = function (imgInd) {
