@@ -5,9 +5,10 @@
 		<div class="btn-inside left"></div>
 	</a>
 	<div class="carousel">
-		<ul class="thumbs-imgs" style="left:{{$ctrl.shift}}px">
+		<ul class="thumbs-imgs" style="left:{{$ctrl.shift}}px; width:{{$ctrl.filmWidth}}px">
 			<li ng-repeat="(key, img) in $ctrl.data">
-				<img 	ng-src="{{$ctrl.getSmallImg(key)}}"
+				<img 	class="frames" 
+							ng-src="{{$ctrl.getSmallImg(key)}}"
 							ng-click="$ctrl.openPopUp(key)"
 							/>
 							<!-- ng-if="$ctrl.getShowFlag(key)" -->

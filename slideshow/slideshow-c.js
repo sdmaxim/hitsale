@@ -8,16 +8,19 @@ angular.
         var self = this;
         self.data = [];
         var fullPath = "";
-        var fullWidth = 0;
+        var startFilmWidth = 1000; //старотовая длина пленки кадров
+        self.filmWidth = startFilmWidth; //Сумма ширин всех кадров + расстояние между ними
         var thumbLength = 0;
         self.length = 0;
         var start = 0;
         var end = 0;
         var bigInd = 0;
-        var imagesStringLength = 0;
-        var imgCount = 0;
-        var caruselWidth = 640;
-        self.shift = 0;
+        var widthShowenFrames = 0;
+        var framesCount = 0;
+        var slideShowWindow = 640;
+        var framesBetweenWidth = 2;
+        var cursor = 0;
+        self.shift = -framesBetweenWidth;
 
         GetData.get({filename: $routeParams.pageId}, function(images) {
           self.data = images.data;
@@ -29,15 +32,20 @@ angular.
             var img = new Image();
             
             img.onload = function() {
-              imgCount++;
+              framesCount++;
               self.data[i].width = this.width;
               self.data[i].height = this.height;
-              fullWidth += this.width;
-              if (imagesStringLength < caruselWidth) {
-                imagesStringLength += this.width;
+              self.filmWidth += this.width + framesBetweenWidth;
+              //console.log(i+" "+self.filmWidth+" "+this.width);
+              if (widthShowenFrames < slideShowWindow) {
+                widthShowenFrames += this.width + framesBetweenWidth;
                 thumbLength += 1;
-              }
-              if (imgCount == self.length) {
+              }           
+              
+              if (framesCount == self.length) {
+                widthShowenFrames -= framesBetweenWidth;
+                self.filmWidth -= framesBetweenWidth + startFilmWidth;
+
                 end = self.data.length-1;
                 if (end > thumbLength-1) {
                   end = thumbLength-1;
@@ -52,49 +60,41 @@ angular.
         });
 
         self.nextImage = function () {
-          /*imagesStringLength -= self.data[start].width;
-          var i = end;
-          while ((imagesStringLength < caruselWidth) && (i < self.length-1)) {
-              i++;
-              imagesStringLength += self.data[i].width;
+          if ((cursor < 0) || (start == 0)) {
+            self.shift -= (widthShowenFrames - slideShowWindow - framesBetweenWidth);
+            if (cursor < 0) cursor = 2; else cursor = 1;
+          } else {
+            if (cursor > 0) {
+              self.shift -= (self.data[end].width + framesBetweenWidth);
+              widthShowenFrames += self.data[end].width - self.data[start].width;
+              cursor = 1;
+            }
+            if (end == self.length-1) cursor = 0;
           }
-          if (imagesStringLength >= caruselWidth) 
-            start++;
-          else 
-            imagesStringLength += self.data[start].width;
-          console.log(start + " " + end + " " + imagesStringLength + " " + self.length);
-          end = i;*/
+          console.log(start + " " + end + " " + self.shift + " " + widthShowenFrames + " " + slideShowWindow + " " + self.data[end].width);
           bigInd++;
-          start++;
+          start+=cursor;
+          end+=cursor;
           validInd();
-          if (self.shift - self.data[start].width < 0)
-            self.shift = 0;
-          else 
-            self.shift -= self.data[start].width;
-
-          console.log(start + " " + end + " " + self.shift);
         };
 
         self.prevImage = function () {
-          /*imagesStringLength -= self.data[end].width;
-          var i = start;
-          while ((imagesStringLength < caruselWidth) && (i > 0)) {
-              i--;
-              imagesStringLength += self.data[i].width;
+          if (cursor > 0) {
+            self.shift += (widthShowenFrames - slideShowWindow - framesBetweenWidth);
+            if (cursor > 0) cursor = -2; else cursor = -1;
+          } else {
+            if (cursor < 0) {
+              self.shift += self.data[end].width + framesBetweenWidth;
+              widthShowenFrames += self.data[start].width - self.data[end].width;
+              cursor = -1;
+            }
+            if (start == 0) cursor = 0;
           }
-          if (imagesStringLength >= caruselWidth) 
-            end--;
-          else 
-            imagesStringLength += self.data[start].width;
-          start = i;
-          console.log(start + " " + end + " " + imagesStringLength);*/
+          console.log(start + " " + end + " " + self.shift + " " + widthShowenFrames + " " + slideShowWindow + " " + self.data[end].width);
           bigInd--;
-          start--;
+          start+=cursor;
+          end+=cursor;
           validInd();
-          self.shift += self.data[start].width;
-          /*if (self.shift > fullWidth-caruselWidth) 
-              self.shift = fullWidth-caruselWidth;*/
-          console.log(start + " " + end + " " + self.shift);
         };
 
         self.getShowFlag = function (imgInd) {

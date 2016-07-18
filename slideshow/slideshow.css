@@ -1,7 +1,3 @@
-.img-thumbs li {
-  cursor: pointer;
-}
-
 .bigimg {
   background-color: white;
   float: left;
@@ -14,11 +10,16 @@
 }
 
 .thumbs-imgs {
-	width: 5250px;
   height: 170px;
   position: relative;
   z-index: 1;
-  transition:0.2s linear all;
+  transition:0.2s ease-in-out;
+}
+
+ul .thumbs-imgs {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .selected{
@@ -41,6 +42,14 @@
 	width: auto;
 	height: 170px;
   cursor: pointer;
+}
+
+.frames {
+  width:auto; 
+  height: 150px; 
+  float: left;
+  border-radius: 7px;
+  margin-left: 2px
 }
 
 .prevbtnimg, .nextbtnimg {
@@ -111,7 +120,6 @@
 .prevbtnimg.big:hover, .nextbtnimg.big:hover{
   background: #baff00;
 }
-
 
 .popUpImg {
   margin: calc(50% - 350px);
