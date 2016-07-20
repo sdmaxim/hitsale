@@ -33,8 +33,10 @@
 	height: 40px;
 	text-decoration: none;
 	cursor: pointer;
+	transition: 0.8s ease-in-out;
 }
 
 .menubar a.menuitem:hover {
 	color: #ec5300;
+	transition: 0.1s ease-in-out;
 }

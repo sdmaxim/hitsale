@@ -27,10 +27,16 @@
 	background-image: -moz-linear-gradient(bottom, #E4E4E4 0%, #FFF 21px);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E4E4E4');
 	zoom: 1;
+	transition:0.5s ease-out;
 }
 
 .leftmenu a.menuitem:hover{
-	color: #ec5300;
+	color: #ec00da;
+	transition: 0.2s ease-in-out;
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+  padding-left: 20px;
 }
 
 .module-header {
