@@ -1,0 +1,12 @@
+{
+	"category" 	: "hologram",
+	"list" : [
+		{	"name" : "נציג שירות הולוגרמי",				"url"	: "virtual-promoter.html",	"img"	:  "promouter.jpg"},
+		{	"name" : "דמויות ראשים הולוגרמיות",		"url"	: "heads.html",							"img"	:  "heads.jpg"},
+		{	"name" : "דלתות הולוגרמיות",					"url"	: "doors.html",							"img"	:  "door.jpg"},
+		{	"name" : " פירמידה הולוגרמית",				"url"	: "pyramids.html",					"img"	:  "pyramid.jpg"},
+		{	"name" : "חלון ראווה הולוגרמי",				"url"	: "video-shop-window.html",	"img"	:  "video_vitrina.jpg"},
+		{	"name" : "מיני נציג",								"url"	: "mini-promoter.html",			"img"	:  "promo_button.jpg"},
+		{	"name" : "בקרוב",									"url"	: "optical-illusion.html",	"img"	:  "optical_illusion.jpg"}
+	]
+}

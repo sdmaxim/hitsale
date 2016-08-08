@@ -1,3 +1,4 @@
-git add --all
+git add -A --all *.*
+git status
 git commit -m "%1"
-git push gulliver master
+git push hitsale master

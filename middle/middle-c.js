@@ -7,8 +7,14 @@ angular.
       $locationProvider.hashPrefix('!');
       $routeProvider.
         when('/', {
-          template: '<nav-menu menu-type="middle-menu"></nav-menu>'
+          template: '<nav-menu menu-type="main-menu"></nav-menu>'
         }).
+        when('/hologram', {
+          template: '<nav-menu menu-type="hologram-menu"></nav-menu>'
+        }).        
+        when('/gamadim', {
+          template: '<nav-menu menu-type="gamadim-menu"></nav-menu>'
+        }).    
         when('/:pageType/:pageId.html', {
           template: '<content></content>'
         }).

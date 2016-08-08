@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ru" ng-app="gulliverApp">
+<html lang="ru" ng-app="app">
 <head>
 
 	<title>Студия праздников</title>
@@ -18,7 +18,7 @@
 	<script src="angular/angular-resource.min.js"></script>
 	<script src="angular/angular-route.min.js"></script>
 
-	<script type="text/javascript" src="gulliver-m.js"></script>
+	<script type="text/javascript" src="main-m.js"></script>
 	<script type="text/javascript" src="core/core-m.js"></script>
 	<script type="text/javascript" src="core/getdata/getdata-m.js"></script>
 	<script type="text/javascript" src="core/getdata/getdata-s.js"></script>
@@ -27,9 +27,9 @@
 	<script type="text/javascript" src="slideshow/slideshow-m.js"></script>
 	<script type="text/javascript" src="slideshow/slideshow-c.js"></script>
 
-	<link rel="stylesheet" href="nav-menu/top-menu.css" type="text/css" />
-	<link rel="stylesheet" href="nav-menu/left-menu.css" type="text/css" />
-	<link rel="stylesheet" href="nav-menu/middle-menu.css" type="text/css" />
+	<link rel="stylesheet" href="nav-menu/main-menu.css" type="text/css" />
+	<link rel="stylesheet" href="nav-menu/hologram-menu.css" type="text/css" />
+	<link rel="stylesheet" href="nav-menu/gamadim-menu.css" type="text/css" />
 	<script type="text/javascript" src="nav-menu/nav-menu-m.js"></script>
 	<script type="text/javascript" src="nav-menu/nav-menu-c.js"></script>
 
@@ -47,19 +47,17 @@
 	<div class="page-body" align="center">
 		<div class="main">
 			<div class="header">
+				<a href="#!" class="home_image"></a>
 				<div class="logo">
-					<div class="logo-text-big">ГУЛЛИВЕР</div>
-					<div class="logo-text-small">Студия праздников</div>
+					<div class="logo-text-big">HITSALE</div>
+					<div class="logo-text-small">Hologram Technologies</div>
+					<div class="logo-text-small">מתקני פרסום מיוחדים</div>
 				</div>
 				<div class="phones">
-					<div class="phones-text">(044) 223-46-19</div>
-					<div class="phones-text">(050) 339-00-90</div>
-					<div class="phones-text">(097) 011-66-77</div>
+					<div class="phones-text">053-725-6780</div>
+					<div class="page-title">gamadim34@icloud.com</div>
 				</div>
-				<div class="page-title">Превращаем маленькие события в БОЛЬШИЕ!</div>
 			</div>
-			<nav-menu menu-type="top-menu"></nav-menu>
-			<nav-menu menu-type="left-menu" class="leftcol"></nav-menu>
 			<div ng-view class="content"></div>
 		</div>
 	</div>

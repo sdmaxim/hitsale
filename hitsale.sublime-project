@@ -1,0 +1,20 @@
+{
+ "folders": [
+	{
+	 "folder_exclude_patterns": [
+		"node_modules",
+		"angular",
+	 ],
+	 "path": ".",
+	 "file_exclude_patterns": [
+		"pull.bat",
+		"push.bat",
+		"git.txt",
+		".gitignore",
+		"package.json",
+		"README.md",
+		"npm-debug.log"
+	 ]
+	}
+ ]
+}
