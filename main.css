@@ -88,6 +88,7 @@ h3{
 	border-radius: 0px 0px 7px 7px;
 	float: left;
 }
+
 .home_image {
   color: #FFFFFF;
   margin-left: 40px;
@@ -104,8 +105,8 @@ h3{
 .page-title{
 	float: left;
   color: #FFFFFF;
-  margin-left: 50px;
   font-weight: bold;
+  margin-left: 15px;
 }
 
 .page-title, .phones-text{
@@ -124,18 +125,18 @@ h3{
     font-size: 24px;
     color: #FFFFFF;
     float: left;
-    width: auto;
-    margin-top: 23px;
-    margin-left: 40px;
+    width: 300px;
+    margin-top: 3px;
+    margin-left: 82px;
 }
 .phones-text{
 	float: left;
-	margin-left: 20px;
+	margin-left: 60px;
 }
 .logo{
-  display: block;
+	display: block;
   float: left;
-  width: 326px;
+  width: 490px;
   height: 85px;
   margin-top: 10px;
   text-align: left;
@@ -149,10 +150,11 @@ h3{
 .logo-text-big{
   font-size: 48px;
   color: #FFFFFF;
-  margin-top: 10px;
+  margin-top: 28px;
   margin-left: auto;
   font-style: italic;
   margin-bottom: 19px;
+  float: left;
 }
 .logo-text-big:hover{
 	transition:0.2s ease-out;
@@ -163,6 +165,8 @@ h3{
   color: #FFFFFF;
   margin-top: 7px;
   line-height: 100%;
+  margin-left: 35px;
+  float: left;
 }
 
 .plain-text{
