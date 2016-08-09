@@ -1,0 +1,9 @@
+{ 
+	"category" 	: "maniken",
+	"list" : [
+		{	"name" : "רכישה",	"url"	: "sale.html",	"img"	:  "x.jpg"},
+		{	"name" : "להשכרה",	"url"	: "rent.html",	"img"	:  "x.jpg"},
+		{	"name" : "גלריית תמונות",	"url"	: "photogallery.html",	"img"	:  "x.jpg"},
+		{	"name" : "וידאו",	"url"	: "video.html",	"img"	:  "x.jpg"}
+	]
+}

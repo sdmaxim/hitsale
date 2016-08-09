@@ -1,7 +1,7 @@
 { 
 	"category" 	: "main",
 	"list" : [
-		{	"name" : "Holorgam",	"url"	: "hologram",	"img"	:  "heads.jpg"},
-		{	"name" : "Gamadim",		"url"	: "gamadim",	"img"	:  "gamadim.jpg"}
+		{	"name" : "",	"url"	: "",	"img"	:  ".jpg"},
+		{	"name" : "Holorgam",		"url"	: "hologram",	"img"	:  "heads.jpg"}
 	]
 }

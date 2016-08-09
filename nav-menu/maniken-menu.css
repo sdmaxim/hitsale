@@ -1,11 +1,11 @@
-.hologram{
+.maniken{
 	width: auto;
 	float: left;
 	background: #FFF none repeat scroll 0% 0%;
 }
 
-.hologram a.menuitem {
-	height:230px;
+.maniken a.menuitem {
+	height:466px;
 	font-size:12px;
 	float:left;border:1px solid #A5A5A5;
 	text-align:center;
@@ -13,7 +13,7 @@
 	position:relative;
 	border-radius:7px;
 	background:none repeat scroll 0 0 #FFFFFF;
-	width:218px;
+	width: 466px;
 	margin:5px;
 
 	cursor: pointer;
@@ -21,19 +21,19 @@
 	transition: all 200ms ease-out;
 }
 
-.hologram a.menuitem:hover {
+.maniken a.menuitem:hover {
 	border:1px solid #FF6E00;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transition: all 200ms ease-out;
 }
 
-.hologram a.menuitem span.text{
+.maniken a.menuitem span.text{
 	font-size: 14px;
 	font-weight: bold;
 	color: #444;
 	line-height: 100%;
 }
 
-.hologram a.menuitem img.btn{
+.maniken a.menuitem img.btn{
 	border: 0px solid;
 }

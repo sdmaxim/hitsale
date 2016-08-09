@@ -1,8 +1,0 @@
-{ 
-	"category" 	: "info",
-	"list" : [
-		{	"name" : "Главная",	"url"	: ""},
-		{	"name" : "О нас",		"url"	: "o-nas.html"},
-		{	"name" : "Контакты",	"url"	: "kontakty.html"}
-	]
-}

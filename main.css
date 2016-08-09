@@ -44,7 +44,7 @@ h1, h2, h3 {
 
 h1{
 	line-height:150%;
-	font-size:150%;
+	font-size:32px;
 	color:#585770;
 	font-weight: bold;
 	text-align: center;
@@ -76,16 +76,17 @@ h3{
 	height:85px;
 	clear:both;
 	background-color: #111212;
-	background-image: linear-gradient(to top, #454545, #6F6E6E);
-	background-image: -webkit-linear-gradient(bottom, #454545, #6F6E6E);
-	background-image: -o-linear-gradient(bottom, #454545, #6F6E6E);
-	background-image: -ms-linear-gradient(bottom, #454545, #6F6E6E);
-	background-image: -moz-linear-gradient(bottom, #454545, #6F6E6E);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6F6E6E', endColorstr='#454545');
+	background-image: linear-gradient(to top, #6b6b6b, #4b8c43);
+	background-image: -webkit-linear-gradient(bottom, #6b6b6b, #4b8c43);
+	background-image: -o-linear-gradient(bottom, #6b6b6b, #4b8c43);
+	background-image: -ms-linear-gradient(bottom, #6b6b6b, #4b8c43);
+	background-image: -moz-linear-gradient(bottom, #6b6b6b, #4b8c43);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b8c43', endColorstr='#6b6b6b');
 	zoom: 1;
 	color:#969696;
 	overflow:hidden;
 	border-radius: 0px 0px 7px 7px;
+	float: left;
 }
 .home_image {
   color: #FFFFFF;
@@ -132,11 +133,13 @@ h3{
 	margin-left: 20px;
 }
 .logo{
-	display: block;
-	float:left;
-	width:247px;
-	height:85px;
-	margin-top:10px;
+  display: block;
+  float: left;
+  width: 326px;
+  height: 85px;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .logo-text-big {
@@ -156,14 +159,22 @@ h3{
 }
 
 .logo-text-small{
-	font-size:17px;
-	color:#FFFFFF;
-	margin-top: 7px;
-	margin-left: auto;
+	font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 7px;
+  line-height: 100%;
 }
 
 .plain-text{
 	line-height: 115%;
 	font-size: 12pt;
 	text-align: left;
+}
+
+.ltr-text {
+	direction: ltr; 
+	padding: 10px; 
+	text-align: right;
+  font-size: 16px;
+  line-height: 120%;
 }

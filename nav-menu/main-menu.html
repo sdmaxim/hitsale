@@ -1,8 +1,12 @@
-<ul>
-  <li ng-repeat="menuItem in $ctrl.menuItems">
-  	<a class="menuitem" href="#!/{{menuItem.url}}">
-  		<span class="text">{{menuItem.name}}</span>
-  		<img ng-src="data/images/menu/{{menuItem.img}}"></img>
+<div>
+<a class="menuitem" href="#!/maniken">
+  		<span class="text">בובות פרסום</span>
+  		<img ng-src="data/images/menu/maniken.jpg"></img>
   	</a>
-  </li>
-</ul>
+</div>
+<div>
+<a class="menuitem" href="#!/hologram">
+  		<span class="text">הולוגרמות</span>
+  		<nav-menu menu-type="hologram-menu"></nav-menu>
+  	</a>
+</div>

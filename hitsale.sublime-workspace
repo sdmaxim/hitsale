@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"auto"
+			],
+			[
+				"gama",
+				"gamadim-menu.css"
+			],
+			[
 				"pu",
 				"public/"
 			],
@@ -72,10 +80,18 @@
 	"buffers":
 	[
 		{
-			"file": "/C/www/hitsale/hitsale.sublime-project",
+			"file": "data/json/maniken-menu.json",
 			"settings":
 			{
-				"buffer_size": 45,
+				"buffer_size": 311,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nav-menu/nav-menu-c.js",
+			"settings":
+			{
+				"buffer_size": 503,
 				"line_ending": "Unix"
 			}
 		}
@@ -137,11 +153,35 @@
 	},
 	"expanded_folders":
 	[
-		"/C/www/hitsale",
-		"/C/www/hitsale/static-data"
+		"/C/www/hitsale/html",
+		"/C/www/hitsale/html/data",
+		"/C/www/hitsale/html/data/images/stories",
+		"/C/www/hitsale/html/data/json",
+		"/C/www/hitsale/html/middle",
+		"/C/www/hitsale/html/nav-menu"
 	],
 	"file_history":
 	[
+		"/C/www/hitsale/html/middle/middle-c.js",
+		"/C/www/hitsale/html/nav-menu/main-menu.html",
+		"/C/www/hitsale/html/nav-menu/nav-menu-c.js",
+		"/C/www/hitsale/html/nav-menu/hologram-menu.html",
+		"/C/www/hitsale/html/index.html",
+		"/C/www/hitsale/html/data/json/main-menu.json",
+		"/C/www/hitsale/html/main.css",
+		"/C/www/hitsale/html/nav-menu/hologram-menu.css",
+		"/C/www/hitsale/html/nav-menu/main-menu.css",
+		"/C/www/hitsale/html/data/json/hologram-menu.json",
+		"/C/www/hitsale/html/data/hologram/video-shop-window.html",
+		"/C/www/hitsale/html/data/hologram/pyramids.html",
+		"/C/www/hitsale/html/data/hologram/optical-illusion.html",
+		"/C/www/hitsale/html/data/hologram/mini-promoter.html",
+		"/C/www/hitsale/html/data/hologram/virtual-promoter.html",
+		"/C/www/hitsale/html/data/hologram/heads.html",
+		"/C/www/hitsale/html/data/hologram/doors.html",
+		"/C/www/hitsale/html/data/json/gamadim-menu.json",
+		"/C/www/hitsale/html/main-m.js",
+		"/C/www/hitsale/html/hitsale.sublime-project",
 		"/C/www/svetomag/public/index.html",
 		"/C/www/svetomag/public/nav-menu/nav-menu-m.js",
 		"/C/www/svetomag/public/nav-menu/nav-menu-c.js",
@@ -253,6 +293,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"category",
+			"content",
 			"login",
 			"registerHit",
 			"carousel",
@@ -298,6 +340,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"hologram",
 			"auth",
 			"film",
 			"bigMargineLeft",
@@ -334,34 +377,50 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/www/hitsale/hitsale.sublime-project",
-					"semi_transient": true,
+					"file": "data/json/maniken-menu.json",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 311,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								311,
+								311
 							]
 						],
 						"settings":
 						{
+							"auto_complete": true,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										310,
+										311
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										0,
+										1
+									]
 								},
 								"unmatched":
 								{
@@ -426,7 +485,8 @@
 								"bh_single_quote_content"
 							],
 							"bs_sintax": "json",
-							"buffer_scroll_name": "adf419a7",
+							"buffer_scroll_name": "e16db686",
+							"spell_check": false,
 							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -434,6 +494,129 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "nav-menu/nav-menu-c.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										480,
+										481
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										385,
+										386
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "8a1a526c",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -482,7 +665,7 @@
 	"project": "hitsale.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -520,7 +703,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 215.0,
+	"side_bar_width": 189.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
