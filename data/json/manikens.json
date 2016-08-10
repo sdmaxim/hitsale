@@ -1,0 +1,17 @@
+{
+	"path" : "data/images/manikens/",
+	"filename" : "manikens-",
+	"data" : [
+		{"fileId" : "01", "title" : ""},
+		{"fileId" : "02", "title" : ""},
+		{"fileId" : "03", "title" : ""},
+		{"fileId" : "04", "title" : ""},
+		{"fileId" : "05", "title" : ""},
+		{"fileId" : "06", "title" : ""},
+		{"fileId" : "07", "title" : ""},
+		{"fileId" : "08", "title" : ""},
+		{"fileId" : "09", "title" : ""},
+		{"fileId" : "10", "title" : ""},
+		{"fileId" : "11", "title" : ""}
+	]
+}

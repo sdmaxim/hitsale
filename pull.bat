@@ -1,1 +1,1 @@
-git pull gulliver master
+git pull hitsale master

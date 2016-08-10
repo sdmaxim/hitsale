@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"lo",
+				"log"
+			],
+			[
+				"fo",
+				"font-size: 〔property〕"
+			],
+			[
+				"text",
+				"text-align: 〔property〕"
+			],
+			[
 				"a",
 				"auto"
 			],
@@ -26,10 +38,6 @@
 			[
 				"in",
 				"input	Tag"
-			],
-			[
-				"lo",
-				"loginServ"
 			],
 			[
 				"fun",
@@ -79,46 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "data/json/maniken-menu.json",
-			"settings":
-			{
-				"buffer_size": 310,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 2626,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "main.css",
-			"settings":
-			{
-				"buffer_size": 3648,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "data/maniken/sale.html",
-			"settings":
-			{
-				"buffer_size": 1439,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/www/gulliver/index.html",
-			"settings":
-			{
-				"buffer_size": 2807,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -128,9 +96,13 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "inst",
+		"last_filter": "pa",
 		"selected_items":
 		[
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -156,7 +128,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 454.0
+		"width": 510.0
 	},
 	"console":
 	{
@@ -177,22 +149,42 @@
 	},
 	"expanded_folders":
 	[
-		"/C/www/hitsale",
-		"/C/www/hitsale/data",
-		"/C/www/hitsale/data/maniken",
-		"/C/www/hitsale/middle"
+		"/C/www/hitsale/html",
+		"/C/www/hitsale/html/core",
+		"/C/www/hitsale/html/core/getdata",
+		"/C/www/hitsale/html/data",
+		"/C/www/hitsale/html/data/json",
+		"/C/www/hitsale/html/data/maniken",
+		"/C/www/hitsale/html/middle",
+		"/C/www/hitsale/html/nav-menu",
+		"/C/www/hitsale/html/slideshow"
 	],
 	"file_history":
 	[
+		"/C/www/hitsale/html/data/maniken/photogallery.html",
+		"/C/www/hitsale/html/core/getdata/getdata-s.js",
+		"/C/www/hitsale/html/slideshow/slideshow-c.js",
+		"/C/www/hitsale/html/slideshow/slideshow.css",
+		"/C/www/hitsale/html/data/json/manikens.json",
+		"/C/www/hitsale/html/data/json/bad-promo.json",
+		"/C/www/hitsale/html/main.css",
+		"/C/www/hitsale/html/data/maniken/video.html",
+		"/C/Users/sdmaxim/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/www/hitsale/html/data/json/photogallery.json",
+		"/C/www/hitsale/html/nav-menu/hologram-menu.css",
+		"/C/www/hitsale/html/nav-menu/main-menu.css",
+		"/C/www/hitsale/html/data/maniken/sale.html",
+		"/C/www/hitsale/html/data/maniken/rent.html",
+		"/C/www/hitsale/html/index.html",
 		"/C/www/hitsale/html/middle/middle-c.js",
+		"/C/www/hitsale/html/data/json/maniken-menu.json",
+		"/C/www/hitsale/html/nav-menu/maniken-menu.html",
+		"/C/www/hitsale/html/nav-menu/maniken-menu.css",
+		"/C/Users/sdmaxim/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
 		"/C/www/hitsale/html/nav-menu/main-menu.html",
 		"/C/www/hitsale/html/nav-menu/nav-menu-c.js",
 		"/C/www/hitsale/html/nav-menu/hologram-menu.html",
-		"/C/www/hitsale/html/index.html",
 		"/C/www/hitsale/html/data/json/main-menu.json",
-		"/C/www/hitsale/html/main.css",
-		"/C/www/hitsale/html/nav-menu/hologram-menu.css",
-		"/C/www/hitsale/html/nav-menu/main-menu.css",
 		"/C/www/hitsale/html/data/json/hologram-menu.json",
 		"/C/www/hitsale/html/data/hologram/video-shop-window.html",
 		"/C/www/hitsale/html/data/hologram/pyramids.html",
@@ -296,12 +288,11 @@
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/www/sublime/style.sass",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/default/Preferences.sublime-settings",
-		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/default/Default (Windows).sublime-keymap",
-		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap"
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/default/Default (Windows).sublime-keymap"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -315,6 +306,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"self.counter",
+			"bigInd",
+			"delta",
+			"cursor",
+			"counter",
+			"showenFramesL",
+			"start",
+			"end",
+			"</span>",
+			"<span style=\"font-weight: bold;\">",
+			"<span style=\"font-size: 11pt; line-height: 115%; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" dir=\"rtl\" lang=\"HE\">",
+			" class=\"MsoNoSpacing\" dir=\"rtl\"><b><span style=\"font-size: 18pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"HE\"",
+			"<span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"HE\"><o:p></o:p></span>",
+			"<p class=\"MsoNoSpacing\" dir=\"rtl\"><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"HE\">",
+			"<p class=\"MsoNoSpacing\" dir=\"rtl\"><b><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"HE\">",
+			">",
+			"hologram",
 			"category",
 			"content",
 			"login",
@@ -362,6 +370,19 @@
 		"regex": false,
 		"replace_history":
 		[
+			"counter",
+			"self.bigInd",
+			"self.delta",
+			"self.cursor",
+			"self.counter",
+			"self.showenFramesL",
+			"self.start",
+			"self.end",
+			"</b>",
+			"<b>",
+			"",
+			"<p>",
+			"maniken",
 			"hologram",
 			"auth",
 			"film",
@@ -394,616 +415,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "data/json/maniken-menu.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										309,
-										310
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										0,
-										1
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bs_sintax": "json",
-							"buffer_scroll_name": "e16db686",
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
-							"spell_check": false,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2626,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2529,
-								2529
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2531,
-										2534
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										2487,
-										2490
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "e783a553",
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1412,
-								1412
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1990,
-										1991
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1363,
-										1364
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bs_sintax": "css",
-							"buffer_scroll_name": "a5429b09",
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": -0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "data/maniken/sale.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								353,
-								353
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										351,
-										352
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										335,
-										336
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "b808ad81",
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/www/gulliver/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2807,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2240,
-								2281
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2277,
-										2280
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										2241,
-										2244
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bs_sintax": "html",
-							"buffer_scroll_name": "9d734b27",
-							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1050,7 +463,7 @@
 	"project": "hitsale.sublime-project",
 	"replace":
 	{
-		"height": 94.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1088,7 +501,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 189.0,
+	"side_bar_width": 227.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

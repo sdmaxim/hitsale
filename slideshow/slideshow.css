@@ -19,15 +19,15 @@ ul .thumbs-imgs {
   float: left;
   position: relative;
   overflow: hidden;
-  width: 650px;
+  width: 897px;
   height: 150px;
-  background: #000;
+  background: #bab1a1;
 }
 
 .film-top {
   background-image:url('filmhole.gif');
   height: 29px;
-  width: 650px;
+  width: 897px;
   float: left;
 }
 
@@ -52,7 +52,7 @@ ul .thumbs-imgs {
   height: 60px;
   line-height: 1;
   color: #d1d1d1;
-  background-color: #000;
+  background-color: #bab1a1;
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 25px;
@@ -141,7 +141,7 @@ ul .thumbs-imgs {
   top: 0;
   bottom: 0;
   background: rgba(0,0,0,0.64);
-  z-index: 1;
+  z-index: 99;
 }
 
 .popUpImg-bg.ng-enter,

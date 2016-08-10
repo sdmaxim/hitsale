@@ -1,0 +1,12 @@
+{
+	"path" : "data/images/bad-promo/",
+	"filename" : "bad-promotion-",
+	"data" : [
+		{"fileId" : "01", "title" : ""},
+		{"fileId" : "02", "title" : ""},
+		{"fileId" : "03", "title" : ""},
+		{"fileId" : "04", "title" : ""},
+		{"fileId" : "05", "title" : ""},
+		{"fileId" : "06", "title" : ""}
+	]
+}
