@@ -23,6 +23,23 @@ angular.
         self.shift = 0; //Общий сдвиг ленты
         self.bigMargineLeft = 0; //Отступ от левого края для больших картинок
         self.bigMargineTop = 0; //Отступ от левого края для больших картинок
+        self.thumbStyle = {};
+        /*          style=" margin-left: {{$ctrl.bigMargineLeft}}px; 
+                  margin-top: {{$ctrl.bigMargineTop}}px">
+                  */
+        self.bigStyle = {};
+
+        var setThumbStyle = function() {
+          self.thumbStyle = {
+            "left" : self.shift + "px",
+            "width" : self.filmWidth + "px"
+          },
+          self.bigStyle = {
+            "margin-left" : self.bigMargineLeft + "px",
+            "margin-top" : self.bigMargineTop + "px"
+          }
+        };
+        setThumbStyle();
 
         GetData.get({filename: $attrs.jsonName}, function(images) {
           self.data = images.data;
@@ -98,6 +115,7 @@ angular.
             self.showenFramesL += self.data[self.start].width + space;
           }
           self.shift -= self.delta;
+          setThumbStyle();
         };
 
         self.prevImage = function () {
@@ -135,6 +153,7 @@ angular.
             self.showenFramesL += self.data[self.end].width + space;
           }
           self.shift += self.delta;
+          setThumbStyle();
         };
 
         self.getShowFlag = function (imgInd) {
@@ -178,6 +197,7 @@ angular.
         self.openPopUp = function( imgId ) {
           self.bigInd = imgId;
           getbigMargine();
+          setThumbStyle();
           self.showPopUpImg = true;
         }
       }

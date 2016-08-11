@@ -6,7 +6,7 @@
 	</a>
 	<div class="film-top"></div>
 	<div class="film">
-		<ul class="thumbs-imgs" style="left:{{$ctrl.shift}}px; width:{{$ctrl.filmWidth}}px">
+		<ul class="thumbs-imgs" ng-style="$ctrl.thumbStyle">
 			<li ng-repeat="(key, img) in $ctrl.data">
 				<img 	class="frames" 
 							ng-src="{{$ctrl.getSmallImg(key)}}"
@@ -24,8 +24,7 @@
 	<div 	class="popUpImg-bg" 
 				ng-if="$ctrl.showPopUpImg">
 		<div 	class="popUpImg" 
-					style="	margin-left: {{$ctrl.bigMargineLeft}}px; 
-									margin-top: {{$ctrl.bigMargineTop}}px">
+					ng-style="$ctrl.bigStyle">
 			<div class="close" ng-click="$ctrl.closePopUp()">x</div>
 			<div class="popUpMsg">{{$ctrl.getTitle()}}</div>
 			<a 	class="prevbtnimg big" 
